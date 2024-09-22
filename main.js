@@ -8,25 +8,24 @@ function inputValu(id) {
 function innerText(id) {
   return parseFloat(document.getElementById(id).innerText);
 }
-// Donate btn click----1
-// donatBtn.addEventListener("click", function () {
-//   const myBalanc = innerText("my-balanc");
-//   const donateAmount = inputValu("donate-input");
-//   const donetShow = innerText("main-donate");
-//   // -----
-//   const addDonate = donetShow + donateAmount;
-//   const outDonate = myBalanc - donateAmount;
-//   document.getElementById("my-balanc").innerText = outDonate;
-//   document.getElementById("main-donate").innerText = addDonate;
-// });
 
 function donateButton(e) {
   const myBalanc = innerText("my-balanc");
   const donateAmount = inputValu("donate-input");
   const donetShow = innerText("main-donate");
+  // --if conditaion add
+
+  if (donateAmount < 0 || isNaN(donateAmount)) {
+    return alert("no");
+  } else {
+    const modal = document.getElementById("my-modal");
+    modal.showModal();
+  }
   // -----
   const addDonate = donetShow + donateAmount;
   const outDonate = myBalanc - donateAmount;
   document.getElementById("my-balanc").innerText = outDonate;
   document.getElementById("main-donate").innerText = addDonate;
+
+  // -----Modal add
 }
