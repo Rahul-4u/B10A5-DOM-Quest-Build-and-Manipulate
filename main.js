@@ -1,3 +1,10 @@
+//
+
+const bolg = document.getElementById("blog");
+bolg.addEventListener("click", function () {
+  window.location.href = "/faq.html";
+});
+
 const donatBtn = document.getElementById("donat-btn");
 
 // ---value function
