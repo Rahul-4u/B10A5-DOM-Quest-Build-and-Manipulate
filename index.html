@@ -52,17 +52,27 @@
         </div>
       </section>
       <!-- Hero section  Start -->
-      <section class="w-11/12 mx-auto i">
+      <section class="w-11/12 mx-auto">
         <!-- Hero Btn -->
         <div class="flex justify-center items-center gap-5 py-10 mt-20">
-          <button class="btn btn-secondary">Secondary</button>
+          <button
+            id="donation-btn"
+            class="btn bg-btn px-10 font-bold text-black border-slate-300"
+          >
+            Donation
+          </button>
 
-          <button class="btn btn-outline btn-secondary">History</button>
+          <button
+            id="history-btn"
+            class="btn font-bold px-10 text-black border-slate-300"
+          >
+            History
+          </button>
         </div>
       </section>
     </header>
     <!-- Main div start -->
-    <main class="max-w-[1440px] mx-auto">
+    <main id="donation-main-div" class="max-w-[1440px] mx-auto">
       <!-- Donation section start -->
       <section class="bg-slate-400">
         <div class="section-container">
@@ -111,6 +121,11 @@
             </div>
           </div>
           <!--  -->
+        </div>
+      </section>
+      <!--  -->
+      <section class="bg-slate-400">
+        <div class="section-container">
           <div class="hero bg-base-200">
             <div class="hero-content grid lg:grid-cols-2">
               <div cla>
@@ -121,7 +136,9 @@
                   class="flex gap-2 bg-slate-400 lg:w-3/12 w-6/12 p-2 rounded-lg"
                 >
                   <img src="assets/coin.png" alt="" />
-                  <span id="main-donate" class="font-bold text-color">0</span>
+                  <span id="main-donate-two" class="font-bold text-color"
+                    >0</span
+                  >
                   <span class="text-color font-bold">BDT</span>
                 </div>
                 <br />
@@ -138,7 +155,7 @@
                 </p>
                 <!-- input text -->
                 <input
-                  onclick="donateButton(this)"
+                  id="donate-input"
                   type="text"
                   placeholder="Type here"
                   class="input input-bordered input-secondary w-full max-w-full"
@@ -146,6 +163,7 @@
                 <br />
                 <!-- button -->
                 <button
+                  onclick="donateButtonTwo(this)"
                   id="donat-btn"
                   class="btn bg-btn max-w-full w-full mt-4"
                 >
@@ -154,13 +172,65 @@
               </div>
             </div>
           </div>
+          <!--  -->
         </div>
       </section>
-    </main>
-    <!-- Footer div start -->
-    <footer>
-      <!-- modal -->
-      <!-- Open the modal using ID.showModal() method -->
+      <!--  -->
+
+      <section class="bg-slate-400">
+        <div class="section-container">
+          <div class="hero bg-base-200">
+            <div class="hero-content grid lg:grid-cols-2">
+              <div cla>
+                <img src="assets/noakhali.png" alt="" />
+              </div>
+              <div class="text-left">
+                <div
+                  class="flex gap-2 bg-slate-400 lg:w-3/12 w-6/12 p-2 rounded-lg"
+                >
+                  <img src="assets/coin.png" alt="" />
+                  <span id="main-donate-three" class="font-bold text-color"
+                    >0</span
+                  >
+                  <span class="text-color font-bold">BDT</span>
+                </div>
+                <br />
+                <h1 class="font-bold text-[20px]">
+                  Donate for Flood at Noakhali, Bangladesh
+                </h1>
+                <p class="py-6 lg:pr-14">
+                  The recent floods in Noakhali have caused significant damage
+                  to homes infrastructure. Your donation will help provide
+                  essential supplies and to those affected by this disaster.
+                  Every contribution, big or small, makes difference. Please
+                  join us in supporting the relief efforts and making a positive
+                  impact on the lives of those in need.
+                </p>
+                <!-- input text -->
+                <input
+                  id="donate-input"
+                  type="text"
+                  placeholder="Type here"
+                  class="input input-bordered input-secondary w-full max-w-full"
+                />
+                <br />
+                <!-- button -->
+                <button
+                  onclick="donateButtonThree(this)"
+                  id="donat-btn"
+                  class="btn bg-btn max-w-full w-full mt-4"
+                >
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+      <!--  -->
+
+      <!-- History section Start -->
 
       <dialog id="my-modal" class="modal">
         <div class="modal-box">
@@ -174,6 +244,20 @@
           </div>
         </div>
       </dialog>
+    </main>
+    <!-- Footer div start -->
+    <footer>
+      <div id="history-div" class="w-11/12 mx-auto hidden">
+        <!-- <div class="px-4 py-8 border-2 rounded-lg my-5 shadow-sm">
+          <span class="font-bold"
+            >96500 Taka is Donated for famine-2024 at Feni, Bangladesh</span
+          >
+          <br />
+          <p>
+            Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time)
+          </p>
+        </div> -->
+      </div>
     </footer>
 
     <!-- script link add -->
