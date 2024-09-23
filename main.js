@@ -1,4 +1,11 @@
+// ----Header stky
+window.addEventListener("scroll", function () {
+  const header = this.document.getElementById("header");
+  header.classList.toggle("sticky", this.window.scrollY > 0);
+  header.classList.add("bg-red");
+});
 //------DonationBtn funcation
+
 const donationBtn = document.getElementById("donation-btn");
 const historyBtn = document.getElementById("history-btn");
 const donationMainDiv = document.getElementById("donation-main-div");

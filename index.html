@@ -28,19 +28,32 @@
   <body>
     \
     <!-- header div start -->
-    <header class="max-w-[1440px] mx-auto">
-      <section class="header-bg">
-        <div class="navbar w-11/12 mx-auto">
+    <header
+      id="header"
+      class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/90"
+    >
+      <section>
+        <!-- navbar Center -->
+        <div
+          class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
+        >
+          <img src="assets/logo.png" alt="" />
+          <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+        </div>
+        <div class="navbar w-11/12 mx-auto lg:h-8">
           <!-- navbar Start -->
           <div class="navbar-start">
-            <button id="blog" class="bg-btn px-8 py-1.5 rounded-lg font-bold">
+            <button
+              id="blog"
+              class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold"
+            >
               Blog
             </button>
           </div>
           <!-- navbar Center -->
-          <div class="navbar-center">
+          <div class="navbar-center hidden lg:flex">
             <img src="assets/logo.png" alt="" />
-            <a class="btn btn-ghost text-xl">Donate Bangladesh</a>
+            <a class="btn btn-ghost lg:text-xl">Donate Bangladesh</a>
           </div>
           <!-- navbar end -->
           <div class="navbar-end flex gap-2">
