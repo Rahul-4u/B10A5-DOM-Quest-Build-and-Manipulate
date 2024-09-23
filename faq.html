@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- end------ -->
+    <title>Document</title>
+    <!-- style  -->
+    <style>
+      .bg-btn {
+        background-color: #b4f461;
+      }
+      .header-bg {
+        background-color: #f9f7f3;
+      }
+      .text-color {
+        color: #111111b3;
+      }
+    </style>
     <title>FAQ</title>
   </head>
   <body>
-    welcome
+    <header>
+      <section>
+        <!-- navbar Center -->
+        <div
+          class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
+        >
+          <img src="assets/logo.png" alt="" />
+          <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
+        </div>
+        <div class="navbar w-11/12 mx-auto lg:h-8">
+          <!-- navbar Start -->
+          <div class="navbar-start">
+            <button
+              id="home"
+              class="bg-btn lg:px-8 lg:py-1.5 rounded-lg px-8 py-2 font-bold"
+            >
+              Home
+            </button>
+          </div>
+          <!-- navbar Center -->
+          <div class="navbar-center hidden lg:flex">
+            <img src="assets/logo.png" alt="" />
+            <a class="btn btn-ghost lg:text-xl">Donate Bangladesh</a>
+          </div>
+          <!-- navbar end -->
+          <div class="navbar-end flex gap-2">
+            <img src="assets/coin.png" alt="" />
+            <span id="my-balanc" class="font-bold text-color">5000</span>
+            <span class="text-color font-bold">BDT</span>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+    </header>
+    <main class="max-w-[1440px] mx-auto my-10 mt-20">
+      <section class="w-11/12 mx-auto gap-4">
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Click to open this one and close others
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
-  <script src="main.js"></script>
+
+  <script src="faq.js"></script>
 </html>
