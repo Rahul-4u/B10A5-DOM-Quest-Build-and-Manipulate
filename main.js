@@ -27,6 +27,7 @@ bolg.addEventListener("click", function () {
 const donatBtn = document.getElementById("donat-btn");
 
 // ---value function
+
 function inputValu(id) {
   return parseFloat(document.getElementById(id).value);
 }
@@ -36,75 +37,94 @@ function innerText(id) {
 }
 // -----card 1
 function donateButton(e) {
-  const myAmount = 5000;
   const myBalanc = innerText("my-balanc");
   const donateAmount = inputValu("donate-input");
+
   const donetShow = innerText("main-donate");
+
   // --if conditaion add
 
-  if (donateAmount < 0 || isNaN(donateAmount)) {
-    return alert("no");
+  if (donateAmount < 0 || isNaN(donateAmount) || myBalanc < donateAmount) {
+    alert(" Yor are rang");
+    return;
   } else {
     const modal = document.getElementById("my-modal");
     modal.showModal();
-  }
-  // -----
-  const addDonate = donetShow + donateAmount;
-  const outDonate = myBalanc - donateAmount;
-  document.getElementById("my-balanc").innerText = outDonate;
-  document.getElementById("main-donate").innerText = addDonate;
 
-  addHistory(donateAmount);
+    const addDonate = donetShow + donateAmount;
+    const outDonate = myBalanc - donateAmount;
+    document.getElementById("my-balanc").innerText = outDonate;
+    document.getElementById("main-donate").innerText = addDonate;
+
+    addHistory(donateAmount);
+  }
+
+  // -----
 
   // -----Modal add
 }
 
-// ------------------------ card 2
+// ------------
 function donateButtonTwo(e) {
-  const myAmount = 5000;
   const myBalanc = innerText("my-balanc");
-  const donateAmount = inputValu("donate-input");
-  const donetShow = innerText("main-donate-two");
-  // --if conditaion add
 
-  if (donateAmount < 0 || isNaN(donateAmount)) {
-    return alert("no");
+  const donateTwoAmount = inputValu("donate-input-two");
+
+  const donetTwoShow = innerText("main-donate-two");
+
+  // --if conditaion add
+  if (
+    donateTwoAmount < 0 ||
+    isNaN(donateTwoAmount) ||
+    myBalanc < donateTwoAmount
+  ) {
+    alert(" Yor are rang");
+    return;
   } else {
     const modal = document.getElementById("my-modal");
     modal.showModal();
-  }
-  // -----
-  const addDonate = donetShow + donateAmount;
-  const outDonate = myBalanc - donateAmount;
-  document.getElementById("my-balanc").innerText = outDonate;
-  document.getElementById("main-donate-two").innerText = addDonate;
+    // -----
+    const addTwoDonate = donetTwoShow + donateTwoAmount;
+    const outTwoDonate = myBalanc - donateTwoAmount;
+    document.getElementById("my-balanc").innerText = outTwoDonate;
+    document.getElementById("main-donate-two").innerText = addTwoDonate;
+    // --
 
-  addHistory(donateAmount);
+    addHistory(donateTwoAmount);
+  }
+
+  // -----
 
   // -----Modal add
 }
-// -------card 3
+// ----card -3
 function donateButtonThree(e) {
-  const myAmount = 5000;
   const myBalanc = innerText("my-balanc");
-  const donateAmount = inputValu("donate-input");
-  const donetShow = innerText("main-donate-three");
-  // --if conditaion add
 
-  if (donateAmount < 0 || isNaN(donateAmount)) {
-    return alert("no");
+  const donateTwoAmount = inputValu("donate-input-three");
+
+  const donetTwoShow = innerText("main-donate-three");
+
+  // --if conditaion add
+  if (
+    donateTwoAmount < 0 ||
+    isNaN(donateTwoAmount) ||
+    myBalanc < donateTwoAmount
+  ) {
+    alert(" Yor are rang");
+    return;
   } else {
     const modal = document.getElementById("my-modal");
     modal.showModal();
+    // -----
+    const addTwoDonate = donetTwoShow + donateTwoAmount;
+    const outTwoDonate = myBalanc - donateTwoAmount;
+    document.getElementById("my-balanc").innerText = outTwoDonate;
+    document.getElementById("main-donate-three").innerText = addTwoDonate;
+    // --
+
+    addHistory(donateThreeAmount);
   }
-  // -----
-  const addDonate = donetShow + donateAmount;
-  const outDonate = myBalanc - donateAmount;
-  document.getElementById("my-balanc").innerText = outDonate;
-  document.getElementById("main-donate-three").innerText = addDonate;
-
-  addHistory(donateAmount);
-
   // -----Modal add
 }
 
