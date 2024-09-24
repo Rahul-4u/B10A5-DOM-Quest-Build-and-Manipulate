@@ -9,10 +9,21 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- end------ -->
     <title>Document</title>
     <!-- style  -->
     <style>
+      .lexend {
+        font-family: "Lexend", sans-serif;
+        font-optical-sizing: auto;
+      }
       .bg-btn {
         background-color: #b4f461;
       }
@@ -25,7 +36,7 @@
     </style>
     <title>FAQ</title>
   </head>
-  <body>
+  <body class="lexend">
     <header
       id="header"
       class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/100"
@@ -65,40 +76,58 @@
     </header>
     <main class="max-w-[1440px] mx-auto my-10 mt-20">
       <section class="w-11/12 mx-auto gap-4">
+        <h1 class="font-bold text-4xl">Important FAQ ?</h1>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <!-- titel -->
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
+            What is the document object model ?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>
+              The document object model is a programming interface for web
+              documents. It represents the structure of a document as a tree of
+              object. Each mode in the tree corresponds to parts of the
+              document, such as elements, attributes and text
+            </p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
+            What does dom stand ?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>
+              Dom stands for document object model. It is programming interface
+              that represnts the structure of a document, such as HTML or XML,
+              as a tree of object
+            </p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
+            How does the JavaScript Engine work?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>
+              The JaveScript engine is a software environment that reads,
+              parsess, and executes javascript code.
+            </p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">
-            Click to open this one and close others
+            What is the javascript event object ?
           </div>
           <div class="collapse-content">
-            <p>hello</p>
+            <p>
+              The javascript event object is a built-in object that contains
+              information about an event that occyrs in the browser, such as a
+              mouse click, keyboard press or form submission.
+            </p>
           </div>
         </div>
       </section>
