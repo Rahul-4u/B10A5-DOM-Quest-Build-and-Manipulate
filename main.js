@@ -54,7 +54,7 @@ function donateButton(e) {
   if (
     typeof donateAmount !== "number" ||
     typeof donateAmount === "string" ||
-    typeof donateAmount !== "bulen" ||
+    typeof donateAmount === "bulen" + "string" ||
     myBalanc < donateAmount
   ) {
     alert(" Yor are rang");
@@ -88,7 +88,7 @@ function donateButtonTwo(e) {
   if (
     typeof donateTwoAmount !== "number" ||
     typeof donateTwoAmount === "string" ||
-    typeof donateTwoAmount !== "bulen" ||
+    typeof donateTwoAmount === "bulen" + "string" ||
     myBalanc < donateTwoAmount
   ) {
     alert(" Yor are rang");
@@ -124,7 +124,7 @@ function donateButtonThree(e) {
     isNaN(donateTwoAmount) ||
     typeof donateTwoAmount !== "number" ||
     typeof donateTwoAmount === "string" ||
-    typeof donateTwoAmount !== "bulen" ||
+    typeof donateTwoAmount === "bulen" + "string" ||
     myBalanc < donateTwoAmount
   ) {
     alert(" Yor are rang");
