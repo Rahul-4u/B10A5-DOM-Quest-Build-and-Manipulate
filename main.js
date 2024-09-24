@@ -51,7 +51,12 @@ function donateButton(e) {
 
   // --if conditaion add
 
-  if (donateAmount < 0 || isNaN(donateAmount) || myBalanc < donateAmount) {
+  if (
+    typeof donateAmount !== "number" ||
+    typeof donateAmount === "string" ||
+    typeof donateAmount !== "bulen" ||
+    myBalanc < donateAmount
+  ) {
     alert(" Yor are rang");
     return;
   } else {
@@ -81,8 +86,9 @@ function donateButtonTwo(e) {
 
   // --if conditaion add
   if (
-    donateTwoAmount < 0 ||
-    isNaN(donateTwoAmount) ||
+    typeof donateTwoAmount !== "number" ||
+    typeof donateTwoAmount === "string" ||
+    typeof donateTwoAmount !== "bulen" ||
     myBalanc < donateTwoAmount
   ) {
     alert(" Yor are rang");
@@ -116,6 +122,9 @@ function donateButtonThree(e) {
   if (
     donateTwoAmount < 0 ||
     isNaN(donateTwoAmount) ||
+    typeof donateTwoAmount !== "number" ||
+    typeof donateTwoAmount === "string" ||
+    typeof donateTwoAmount !== "bulen" ||
     myBalanc < donateTwoAmount
   ) {
     alert(" Yor are rang");
@@ -147,5 +156,3 @@ function addHistory(donateAmount) {
   const historyShow = document.getElementById("history-div");
   historyShow.appendChild(historyDiv);
 }
-
-
