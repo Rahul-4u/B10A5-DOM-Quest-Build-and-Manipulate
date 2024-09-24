@@ -130,7 +130,7 @@ function donateButtonThree(e) {
     document.getElementById("main-donate-three").innerText = addTwoDonate;
     // --
 
-    addHistory(donateThreeAmount);
+    addHistory(donateTwoAmount);
   }
   // -----Modal add
 }
@@ -142,21 +142,10 @@ function addHistory(donateAmount) {
   historyDiv.innerHTML = `
   <span class="font-bold"> ${donateAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</span>
   <br />
-  <p> Date : ${new Date().toLocaleDateString}</p>
+  <p> Date : ${new Date()} </p>
   `;
   const historyShow = document.getElementById("history-div");
   historyShow.appendChild(historyDiv);
 }
 
-// // -----------------------
-// function history(donateAmount) {
-//   const historyDiv = document.createElement("div");
-//   historyDiv.className = "bg-white border-l-2 rounded-lg border-orange-500 p-3";
-//   historyDiv.innerHTML = `
-//      <p>Income: $ ${donateAmount}</p>
 
-//     `;
-
-//   const expenseHistory = document.getElementById("history-div");
-//   expenseHistory.appendChild(historyDiv);
-// }

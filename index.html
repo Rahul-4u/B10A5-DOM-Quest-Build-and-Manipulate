@@ -29,10 +29,10 @@
     <!-- header div start -->
     <header
       id="header"
-      class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/90"
+      class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/95"
     >
-      <section>
-        <!-- navbar Center -->
+      <section class="backdrop-invert-0 lg:py-3 bg-yellow-50 rounded-lg">
+        <!--Phone navbar Center -->
         <div
           class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
         >
@@ -66,7 +66,9 @@
       <!-- Hero section  Start -->
       <section class="w-11/12 mx-auto">
         <!-- Hero Btn -->
-        <div class="flex justify-center items-center gap-5 py-10 mt-20">
+        <div
+          class="flex justify-center items-center gap-5 lg:py-10 py-4 lg:mt-10"
+        >
           <button
             id="donation-btn"
             class="btn bg-btn px-10 font-bold text-black border-slate-300"
@@ -84,18 +86,21 @@
       </section>
     </header>
     <!-- Main div start -->
-    <main id="donation-main-div" class="max-w-[1440px] mx-auto">
+    <main
+      id="donation-main-div"
+      class="max-w-[1440px] mx-auto bg-slate-200 lg:my-10"
+    >
       <!-- Donation section start -->
-      <section class="bg-slate-400">
-        <div class="section-container">
-          <div class="hero bg-base-200">
+      <section class="lg:py-5">
+        <div class="section-container w-11/12 border-2 rounded-xl mx-auto">
+          <div class="hero bg-base-100 rounded-2xl shadow-sm">
             <div class="hero-content grid lg:grid-cols-2">
               <div cla>
                 <img src="assets/noakhali.png" alt="" />
               </div>
               <div class="text-left">
                 <div
-                  class="flex gap-2 bg-slate-400 lg:w-3/12 w-6/12 p-2 rounded-lg"
+                  class="flex gap-2 bg-slate-100 lg:w-3/12 w-6/12 p-2 rounded-lg"
                 >
                   <img src="assets/coin.png" alt="" />
                   <span id="main-donate" class="font-bold text-color">0</span>
@@ -137,16 +142,16 @@
       </section>
 
       <!--  -->
-      <section class="bg-slate-400">
-        <div class="section-container">
-          <div class="hero bg-base-200">
+      <section class="py-5">
+        <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
+          <div class="hero bg-base-100 rounded-2xl shadow-sm">
             <div class="hero-content grid lg:grid-cols-2">
               <div cla>
-                <img src="assets/noakhali.png" alt="" />
+                <img src="assets/feni.png" alt="" />
               </div>
               <div class="text-left">
                 <div
-                  class="flex gap-2 bg-slate-400 lg:w-3/12 w-6/12 p-2 rounded-lg"
+                  class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg"
                 >
                   <img src="assets/coin.png" alt="" />
                   <span id="main-donate-two" class="font-bold text-color"
@@ -156,7 +161,7 @@
                 </div>
                 <br />
                 <h1 class="font-bold text-[20px]">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Donate for Flood Relief in Feni,Bangladesh
                 </h1>
                 <p class="py-6 lg:pr-14">
                   The recent floods in Noakhali have caused significant damage
@@ -189,16 +194,16 @@
         </div>
       </section>
       <!--  -->
-      <section class="bg-slate-400">
-        <div class="section-container">
-          <div class="hero bg-base-200">
+      <section class="py-5">
+        <div class="section-container w-11/12 border-2 rounded-sm mx-auto">
+          <div class="hero bg-base-100 rounded-2xl shadow-sm">
             <div class="hero-content grid lg:grid-cols-2">
               <div cla>
-                <img src="assets/noakhali.png" alt="" />
+                <img src="assets/quota-protest.png" alt="" />
               </div>
               <div class="text-left">
                 <div
-                  class="flex gap-2 bg-slate-400 lg:w-3/12 w-6/12 p-2 rounded-lg"
+                  class="flex gap-2 bg-slate-200 lg:w-3/12 w-6/12 p-2 rounded-lg"
                 >
                   <img src="assets/coin.png" alt="" />
                   <span id="main-donate-three" class="font-bold text-color"
@@ -208,7 +213,7 @@
                 </div>
                 <br />
                 <h1 class="font-bold text-[20px]">
-                  Donate for Flood at Noakhali, Bangladesh
+                  Aid for Injured in the Quota Movement
                 </h1>
                 <p class="py-6 lg:pr-14">
                   The recent floods in Noakhali have caused significant damage
@@ -245,13 +250,18 @@
       <!-- History section Start -->
 
       <dialog id="my-modal" class="modal">
-        <div class="modal-box">
-          <h3 class="text-lg font-bold">Hello!</h3>
-          <p class="py-4">Press ESC key or click the button below to close</p>
-          <div class="modal-action">
-            <form method="dialog">
+        <div
+          class="modal-box text-center py-5 max-w-[340px] mx-auto bg-white shadow-md"
+        >
+          <h3 class="font-bold text-4xl">Congrates !</h3>
+          <br />
+          <img class="mx-auto" src="assets/coin.png" alt="" />
+          <p class="py-4 text-lg">You Have Donated for Humankind</p>
+          <span class="font-bold text-2xl">Successfully</span>
+          <div class="modal-action items-center mx-auto">
+            <form method="dialog" class="mx-auto">
               <!-- if there is a button in form, it will close the modal -->
-              <button class="btn">Close</button>
+              <button class="btn hover:bg-btn">Close Confirmation</button>
             </form>
           </div>
         </div>
