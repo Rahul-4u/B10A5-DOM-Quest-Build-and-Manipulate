@@ -52,12 +52,12 @@ function donateButton(e) {
   // --if conditaion add
 
   if (
-    typeof donateAmount !== "number" ||
-    typeof donateAmount === "string" ||
-    typeof donateAmount === "bulen" + "string" ||
+    // myBalanc < donateAmount
+    donateAmount < 0 ||
+    isNaN(donateAmount) ||
     myBalanc < donateAmount
   ) {
-    alert(" Yor are rang");
+    alert(" Invalid Donation amount");
     return;
   } else {
     const modal = document.getElementById("my-modal");
@@ -67,16 +67,14 @@ function donateButton(e) {
     const outDonate = myBalanc - donateAmount;
     document.getElementById("my-balanc").innerText = outDonate;
     document.getElementById("main-donate").innerText = addDonate;
+    // --
+    const donationName = "Donate for Flood Relief in Feni,Bangladesh";
 
-    addHistory(donateAmount);
+    addHistory(donateAmount, donationName);
   }
-
-  // -----
-
-  // -----Modal add
 }
 
-// ------------
+// ------------card 2
 function donateButtonTwo(e) {
   const myBalanc = innerText("my-balanc");
 
@@ -86,12 +84,11 @@ function donateButtonTwo(e) {
 
   // --if conditaion add
   if (
-    typeof donateTwoAmount !== "number" ||
-    typeof donateTwoAmount === "string" ||
-    typeof donateTwoAmount === "bulen" + "string" ||
+    donateTwoAmount < 0 ||
+    isNaN(donateTwoAmount) ||
     myBalanc < donateTwoAmount
   ) {
-    alert(" Yor are rang");
+    alert(" Invalid Donation amountInvalid Donation amount");
     return;
   } else {
     const modal = document.getElementById("my-modal");
@@ -102,8 +99,9 @@ function donateButtonTwo(e) {
     document.getElementById("my-balanc").innerText = outTwoDonate;
     document.getElementById("main-donate-two").innerText = addTwoDonate;
     // --
+    const donationName = "Donate for Flood at Noakhali, Bangladesh";
 
-    addHistory(donateTwoAmount);
+    addHistory(donateTwoAmount, donationName);
   }
 
   // -----
@@ -122,12 +120,9 @@ function donateButtonThree(e) {
   if (
     donateTwoAmount < 0 ||
     isNaN(donateTwoAmount) ||
-    typeof donateTwoAmount !== "number" ||
-    typeof donateTwoAmount === "string" ||
-    typeof donateTwoAmount === "bulen" + "string" ||
     myBalanc < donateTwoAmount
   ) {
-    alert(" Yor are rang");
+    alert("Invalid Donation amount");
     return;
   } else {
     const modal = document.getElementById("my-modal");
@@ -138,18 +133,18 @@ function donateButtonThree(e) {
     document.getElementById("my-balanc").innerText = outTwoDonate;
     document.getElementById("main-donate-three").innerText = addTwoDonate;
     // --
-
-    addHistory(donateTwoAmount);
+    const donationName = "Aid for Injured in the Quota Movement";
+    addHistory(donateTwoAmount, donationName);
   }
   // -----Modal add
 }
 
 // // ---History active
-function addHistory(donateAmount) {
+function addHistory(donateAmount, donationName) {
   const historyDiv = document.createElement("div");
   historyDiv.className = "px-4 py-8 border-2 rounded-lg my-5 shadow-sm";
   historyDiv.innerHTML = `
-  <span class="font-bold"> ${donateAmount} Taka is Donated for famine-2024 at Feni, Bangladesh</span>
+  <span class="font-bold"> ${donateAmount} Taka is Donated for  ${donationName}</span>
   <br />
   <p> Date : ${new Date()} </p>
   `;

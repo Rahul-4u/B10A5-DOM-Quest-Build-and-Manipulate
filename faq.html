@@ -41,14 +41,7 @@
       id="header"
       class="max-w-[1440px] mx-auto z-10 top-0 backdrop-invert-0 bg-white/100"
     >
-      <section>
-        <!-- navbar Center -->
-        <div
-          class="navbar-center flex md:hidden w-11/12 mx-auto py-2 items-center justify-center"
-        >
-          <img src="assets/logo.png" alt="" />
-          <a class="btn btn-ghost text-xl font-bold">Donate Bangladesh</a>
-        </div>
+      <section class="backdrop-invert-0 lg:py-3 bg-yellow-50 rounded-lg">
         <div class="navbar w-11/12 mx-auto lg:h-8">
           <!-- navbar Start -->
           <div class="navbar-start">
@@ -60,23 +53,25 @@
             </button>
           </div>
           <!-- navbar Center -->
-          <div class="navbar-center hidden lg:flex">
-            <img src="assets/logo.png" alt="" />
-            <a class="btn btn-ghost lg:text-xl">Donate Bangladesh</a>
+          <div class="navbar-center lg:flex">
+            <img class="w-8" src="assets/logo.png" alt="" />
+            <a class="btn btn-ghost lg:text-xl hidden lg:flex"
+              >Donate Bangladesh</a
+            >
           </div>
           <!-- navbar end -->
-          <div class="navbar-end flex gap-2">
+          <div class="navbar-end flex lg:gap-2">
             <img src="assets/coin.png" alt="" />
             <span id="my-balanc" class="font-bold text-color">5000</span>
-            <span class="text-color font-bold">BDT</span>
+            <span class="text-color font-bold text-sm">BDT</span>
           </div>
           <!--  -->
         </div>
       </section>
     </header>
-    <main class="max-w-[1440px] mx-auto my-10 mt-20">
+    <main class="max-w-[1440px] mx-auto my-10 lg:mt-20">
       <section class="w-11/12 mx-auto gap-4">
-        <h1 class="font-bold text-4xl">Important FAQ ?</h1>
+        <h1 class="font-bold text-3xl lg:text-4xl">Important FAQ ?</h1>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <!-- titel -->
           <input type="radio" name="my-accordion-2" checked="checked" />
@@ -92,6 +87,7 @@
             </p>
           </div>
         </div>
+
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">
@@ -99,37 +95,37 @@
           </div>
           <div class="collapse-content">
             <p>
-              I can select elements from the DOM using several methods in
-              javaSceipt. Here are some of the most common ways: 1- Tree
-              structure etc.
+              To select an element from the DOM, I can use several methods
+              provided by the JavaScript DOM API.
             </p>
-            <div class="overflow-x-auto">
-              <li>hi</li>
-            </div>
+          </div>
+        </div>
+
+        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do you manipulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content">
+            <p>
+              Direct Style Manipulation and CSS Classes: This allows for
+              flexible and dynamic changes to both the behavior and appearance
+              of elements!
+            </p>
           </div>
         </div>
         <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl font-medium">
-            How does the JavaScript Engine work?
+            What is event delegation in the context of the DOM, and why is it
+            useful?
           </div>
           <div class="collapse-content">
             <p>
-              The JaveScript engine is a software environment that reads,
-              parsess, and executes javascript code.
-            </p>
-          </div>
-        </div>
-        <div class="collapse collapse-arrow bg-base-200 gap-5 my-5">
-          <input type="radio" name="my-accordion-2" />
-          <div class="collapse-title text-xl font-medium">
-            What is the javascript event object ?
-          </div>
-          <div class="collapse-content">
-            <p>
-              The javascript event object is a built-in object that contains
-              information about an event that occyrs in the browser, such as a
-              mouse click, keyboard press or form submission.
+              Event delegation is a technique in the DOM where you attach a
+              single event listener to a parent element instead of individual
+              listeners to multiple child elements
             </p>
           </div>
         </div>
