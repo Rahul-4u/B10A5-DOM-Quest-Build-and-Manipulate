@@ -88,7 +88,7 @@ function donateButtonTwo(e) {
     isNaN(donateTwoAmount) ||
     myBalanc < donateTwoAmount
   ) {
-    alert(" Invalid Donation amountInvalid Donation amount");
+    alert(" Invalid Donation amount");
     return;
   } else {
     const modal = document.getElementById("my-modal");
